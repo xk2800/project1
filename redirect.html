@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect after TAC | MYRUN</title>
+
+    <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+    
+    <style>
+    body{
+        text-align: center;
+        font-family: arial;
+    }
+    #wait{
+        margin-top: 100px;
+        font-size: 3em;
+    }
+    img{
+        width: 500px;
+    }
+    #cancel{
+        color: red;
+        font-size: 2.5em;
+    }
+    </style>
+
+    <script>
+/*COUNTDOWN SEND BACK TO HOMEPAGE*/
+var timeleft = 5;
+        var downloadTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = timeleft + " seconds";
+        timeleft -= 1;
+        if(timeleft <= -2){
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "0 seconds"
+        }
+        }, 1000);
+/*REDIRECT*/
+        setTimeout(function(){
+            window.location.href = 'after-redirect-Copy.html';
+        },5000);
+    </script>
+</head>
+<body>
+
+    <div id="wait">
+        <span>Please wait while we redirect within <span id="countdown">seconds</span></span>
+    </div>
+
+    <div>  <img src="image/loading.gif"/></div>
+
+    <div id=cancel>Please do not refresh or close browser</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Thank you for payment | MYRUN
+        </title>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+
+    <style>
+        @font-face {
+            font-family: fonts;
+            src: url("fonts/alfa_slab_one/AlfaSlabOne-Regular.ttf");
+        }
+        #close{
+            text-align: center;
+            font-family: fonts;
+            font-size: 2em;
+        }
+        .gif{
+            height: 400px;
+            width: 500px;
+        }
+        #berjaya{
+            color: #82b03c;
+        }
+/*BLINK START*/
+        .redirect {
+            animation: blinker 0.4s linear infinite;
+        }
+        @keyframes blinker {
+            80%{
+                opacity: 0;
+            }   
+        }
+/*BLINK END*/
+        #open{
+            margin: 0 auto;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    
+    </style>
+    <script>
+/*REDIRECT*/
+        setTimeout(function(){
+            window.location.href = 'after-redirect.html';
+        },900);
+    </script>
+    </head>
+<body>
+    <div id="close">
+    <img class="gif" src="image/tick-gif.gif"/>
+    <span id="berjaya"><p>PAYMENT SUCCESSFUL</p></span>
+    <p>THANK YOU FOR YOUR PAYMENT
+    </br> You will receive a email receipt shortly</p>
+    </div>
+
+</body>
+</html>

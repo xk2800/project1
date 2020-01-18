@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make a Payment | MYRUN</title>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">    
+
+        <link rel="stylesheet" href="css/payment-gateway.css" />
+        <script type="text/Javascript" src="javascript/payment-gateway.js">
+        </script>
+</head>
+<body>
+    <div id="main">
+<!---TOP TITLE-->
+    <h2>PAYMENT GATEWAY</h2>
+    
+<!--OPENING-->
+    <div id="accept"> We accept all debit and credit card</div>
+
+<!--START OF FORM-->
+    <div id="payment-form">
+        <form name="paymentfrm" method="post">
+
+    <span id="number">CARD NUMBER</span>
+    <br><input type="text" name="cardnum" maxlength="16"/></div>
+    
+    <span class="label">
+        <br>EXPIRY: <br><select name="expireMM">
+        <!--Dummy--><p><option value="MM"> MM</option></p>
+        <p><option value="01"> 01 </option></p>
+        <p><option value="02"> 02 </option></p>
+        <p><option value="03"> 03 </option></p>
+        <p><option value="04"> 04 </option></p>
+        <p><option value="05"> 05 </option></p>
+        <p><option value="06"> 06 </option></p>
+        <p><option value="07"> 07 </option></p>
+        <p><option value="08"> 08 </option></p>
+        <p><option value="09"> 09 </option></p>
+        <p><option value="10"> 10 </option></p>
+        <p><option value="11"> 11 </option></p>
+        <p><option value="12"> 12 </option></p></select>
+
+        <select name="expireYYYY">
+            <!--Dummy--><p><option value="YYYY"> YYYY </option></p>
+            <p><option value="2020"> 2020 </option></p>
+            <p><option value="2021"> 2021 </option></p>
+            <p><option value="2022"> 2022 </option></p>
+            <p><option value="2023"> 2023 </option></p>
+            <p><option value="2024"> 2024 </option></p>
+            <p><option value="2025"> 2025 </option></p>
+            <p><option value="2026"> 2026 </option></p>
+            <p><option value="2027"> 2027 </option></p>
+            <p><option value="2028"> 2028 </option></p>
+            <p><option value="2029"> 2029 </option></p>
+            <p><option value="2030"> 2030 </option></p></select></p>
+        </span>
+    <span><p id="CCVV">Card CVV/CVC2</span>
+    <br><input type="password" id="cvv" name="ccv" maxlength="3"/></p>
+
+    <span id="name"><p>NAME ON CARD</span>
+    <br><input type="text" name="card-name"/></p>
+
+    <input type="submit" id="confirm" name="btnsubmit" value="Confirm" onclick="pay()"/>
+<!--EDIT THIS CANCEL BUTTON TO REDIRECT TO PREV PAGE-->
+    <input type="button" id="cancel" name="btncancel" value="Cancel" onclick="window.location.href= 'REVIEW SHOPPING CART.html'"/></p>
+    
+    </form>
+    </div>
+    <img style="width:65px; height:40px;" src="image/cards/mastercard.png"/>
+    <img style="width:85px; height:40px;" src="image/cards/visa.png"/>
+    <p><img style="width:75px; height:40px;" src="image/cards/mastercard-secure.png"/>
+    <img style="width:75px; height:40px;" src="image/cards/verified-visa.png"/></p>
+    </div>
+
+</body>
+</html>

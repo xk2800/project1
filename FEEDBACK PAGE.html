@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>FEEDBACK FORM | MYRUN</title>
+        <link rel="stylesheet" type="text/css" href="css/Rey.css"/>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+	
+        <link rel="stylesheet" href="css/navbar.css" />
+        <style>
+            
+            *{
+                max-width:100%;
+            }
+
+            textarea{
+                vertical-align: top;
+            }
+
+            #nothingimportant{
+                margin-top:60px
+            }
+        </style>
+    </head>
+    <body>
+<!--TOP START-->
+    <div id="top">
+        <a href="index.html">
+            <img id="city" src="image/KL-city.png" />
+        </a>
+
+<!--NAV BAR START-->
+    <div id="nav">
+        <div id="home">
+        <a href="index.html">Home</a></div>
+            <div class="dropdown">
+            <button class="dropbtn"> Race Info</button>
+                <div class="content">
+                    <a href="SHOP (CHOOSE OPTION) PAGE.html">List of products</a>
+                    <a href="race-category.html">Category Info</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">Registration</button>
+                <div class="content">
+                    <a href="age_requirement.html">Age Requirment</a>
+                    <a href="race-category.html">Entry Fee</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">About</button>
+                <div class="content">
+                        <a href="Contact.us.html">Contact Us</a>
+                        <a href="About.Us .html">About Us</a>
+                </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn" id="drop">GET INTO RACE</button>
+                <div class="content">
+                    <a href="Login.page.html">LOGIN</a>
+                    <a href="Acc.Reg.Page.html">REGISTER</a>
+                    <a href="FEEDBACK PAGE.html">Feedback</a>
+                </div>
+            </div>
+    </div>
+<!--NAV BAR END-->
+    </div>
+<!--TOP END-->
+       
+        <form id="FORM" style="border:1px black solid; margin:auto; margin-top: 60px;">
+        <div class="feedbackform">
+            <legend style="font-weight:bold; margin: 0 auto;">Rating/Feedback Form</legend>
+            <p style="margin-right:160px;">Star Rating:</p>
+
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="5 STARS">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="4 STARS">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="3 STARS">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="2 STARS">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="1 STAR">1 star</label>
+            </div>
+            
+        <div id="nothingimportant">    
+           <p> <label>Name:</label>
+            <input type="text" name="name" placeholder="John Doe" style="border-radius:5px;">
+        </p>
+            
+            <p> <label>Comment:</label>
+            <textarea name="comment" placeholder="Optional" value="cmt" rows="5" cols="50" style="border-radius:5px;"></textarea></p>
+        </div>
+        <p>
+            <input type="submit" name="sbmitbtn" value="SUBMIT" style="border-radius:5px;">
+            <input type="reset" name="clearbtn" value="CLEAR" style="border-radius:5px;">
+        </p>
+        </form>
+    </body>
+</html>

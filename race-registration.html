@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Race Registration | MYRUN</title>
+	
+	<link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+	
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/race-registration.css" />
+    </head>
+<body>
+<!--TOP START-->
+    <div id="top">
+        <a href="Home-page-after-login.html">
+            <img id="city" src="image/KL-city.png" />
+        </a>
+
+<!--NAV BAR START-->
+<div id="nav">
+    <div id="home">
+    <a href="Home-page-after-login.html">Home</a></div>
+        <div class="dropdown">
+        <button class="dropbtn"> Race Info</button>
+            <div class="content">
+                <a href="SHOP (CHOOSE OPTION) PAGE.html">List of products</a>
+                <a href="race-category.html">Category Info</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">Registration</button>
+            <div class="content">
+                <a href="age_requirement.html">Age Requirment</a>
+                <a href="race-category.html">Entry Fee</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn">About</button>
+            <div class="content">
+                    <a href="Contact.us.html">Contact Us</a>
+                    <a href="About.Us .html">About Us</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn" id="drop">GET INTO RACE</button>
+            <div class="content">
+                <a href="Login.page.html">LOGIN</a>
+                <a href="Acc.Reg.Page.html">REGISTER</a>
+                <a href="FEEDBACK PAGE.html">Feedback</a>
+            </div>
+        </div>
+</div>
+<!--NAV BAR END-->
+    </div>
+<!--TOP END-->
+
+<!--FORM START-->
+    <div class="whole">
+        <span id="title" style="margin-left: -50px;">RACE REGISTRATION</span>
+        <form name="racereg" method="post">
+            <p>Username<span id="dot1">:</span><span id="in"></span><input type="text" name="username" placeholder="--johndoe123--" readonly/></span></p>
+            <p>Name<span id="dot2">:</span><span id="in"><input type="text" name="name" placeholder="--John Doe--" readonly/></p></span>
+            <p>E-mail address<span id="dot3">:</span><span id="in"><input type="text" name="email" placeholder="johndoe@example.com" readonly /></span></p>
+            <p>Phone Number<span id="dot4">:</span><span id="in"><select name="numcode"  required>
+                <option value="---">---</option>
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="012">012</option> 
+                <option value="013">013</option>
+                <option value="014">014</option>
+                <option value="015">015</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option></select>
+
+                <span class="numcode"><input type="text" name="number" placeholder="3456789"  maxlength="8"  required/></span></span></p>
+
+            <p>T-Shirt size<span id="dot5">:</span><span id="in"><select name="shirt" required>
+                <option value="--">--</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+                <option value="XXXL">XXXL</option></select> </span></p>
+            <p>Emergency Contact Name<span id="dot6">:</span><span id="in"><input type="text" name="ename" placeholder="Jane Doe"  required/></span></p>
+            <p>Emergency Contact Number<span id="dot7">:</span><span id="in"><select name="enumcode"  required>
+                <option value="---">---</option>
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="012">012</option>
+                <option value="013">013</option>
+                <option value="014">014</option>
+                <option value="015">015</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option></select>
+                
+                <input type="text" name="enumber" placeholder="3456789"  maxlength="8"  required/></span></p>
+
+            <p>I have read and agree to the<span id="dot8">:</span><span id="in"><input type="checkbox" name="agree" value="agree"  required/><span id="terms">TERMS & CONDITIONS -MYRUN 2020</span></span></p>
+
+<!--LINK PAGE TO REVIEW SHOPPING CART HERE-->
+            <div class="button">
+                <input type="submit" name="submit" value="Submit" onclick="window.location.href='REVIEW SHOPPING CART.html'"/>
+                <input type="reset" name="reset" value="Clear All"/>
+                <input type="button" name="cancel" value="Cancel" onclick="window.location.href= 'Home-page-after-login.html'"/>
+            </div>
+        </form>
+    </div>
+<!--FORM END-->
+
+        <div id="spotify">
+            <iframe src="https://open.spotify.com/embed/playlist/22goZbtOWedSoECzax75LE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
+        </div>
+
+</body>
+</html>

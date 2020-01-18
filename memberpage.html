@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Member Status | MYRUN ADMIN</title>
+
+    <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+
+    <link rel="stylesheet" href="css/admin-nav.css"/>
+<style>h1{background-color:grey; color:white;}
+h1{text-align: center;}
+       h2{text-align: center;}
+	   #name{text-align: center;}
+	   table.table{margin-right:auto;
+	                margin-left:auto;
+					border-radius: 6px}
+		body{text-align:center;}
+       </style>
+    <script>
+        function remove(){
+            var R = document.getElementById('remove').value;
+            alert("--username-- has been deleted");
+            window.location.href = "admin-landing.html"
+
+        }
+        function submit(){
+            var S = document.getElementById('sub').value;
+            alert("Information has been submited");
+            window.location.href = "admin-landing.html"
+        }
+    </script>
+</head>
+<body>
+<!--HEADER START-->
+    <div class="head">
+        <p>&#9400; 2020 MYRUN Copyright
+        <div id="topaccess">Restricted Access For Admins Only</div></p>
+    </div>
+<!--HEADER END-->
+
+<!--NAV BAR START-->
+<div class="upnav">
+    <a href="admin-landing.html">Home</a>
+    <a href="manage-staff.html">Staff Access</a>
+    <a href="memberpage.html"> Manage Users</a>
+    <div class="dropdown">
+        <button class="dropbtn">Manage Product</button>
+            <div class="content">
+                <a href="manage-product-cat.html">Manage Product by Category</a>
+                <a href="manage-product-detail.html">Manage Product Details</a>
+            </div>
+    </div>
+    <a href="ManageOrderPg.html">Manage Order</a>
+    <a href="SalesReport.html">Sales Report</a>
+    <span class="logout"><a href="ADMIN LOGIN PAGE.html">LOGOUT</a></span>
+</div>
+<!--NAV BAR END-->
+
+<p><h1>Control Access Of Your Users</h1></p>
+
+<!--SEARCH BAR START-->
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+    </form>
+<!--SEARCH BAR END-->
+<p><h2>Manage User</h2></p>
+<table class="table" border="1" name="meja" style="border-collapse: collapse;">
+<tr>
+<th>Name</th>
+<th>Status</th>
+<th>Remove Button</th>
+<th>Submit Button</th>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status" value="Active"/>
+                   Inactive<input type= "radio" name="status" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status2" value="Active"/>
+                   Inactive<input type= "radio" name="status2" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status3" value="Active"/>
+                   Inactive<input type= "radio" name="status3" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status4" value="Active"/>
+                   Inactive<input type= "radio" name="status4" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status5" value="Active"/>
+                   Inactive<input type= "radio" name="status5" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Active<input type= "radio" name="status6" value="Active"/>
+                   Inactive<input type= "radio" name="status6" value="Inactive"/>
+</td>
+<td><input type="button" id="remove" name="remove" onclick="remove()" value="Remove"/></td>
+<td><input type="button" id="sub" value="submit" onclick="submit()" value="Submit"/></td>
+</tr>
+</table>
+<!--FOOTER START-->
+    <div class="footer">
+        <p>&#9400; 2020 MYRUN Copyright
+            <div id="access">Restricted Access For Admins Only</div></p>
+    </div>
+<!--FOOTER END-->
+</body>
+</html>

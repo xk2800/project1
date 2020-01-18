@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us | MYRUN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+	
+    <link rel="stylesheet" href="css/navbar.css" />
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #6975A7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  background-color: #2AEBAE;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!--TOP START-->
+    <div id="top">
+      <a href="index.html">
+          <img id="city" src="image/KL-city.png" />
+      </a>
+
+<!--NAV BAR START-->
+<div id="nav">
+  <div id="home">
+  <a href="index.html">Home</a></div>
+      <div class="dropdown">
+      <button class="dropbtn"> Race Info</button>
+          <div class="content">
+              <a href="SHOP (CHOOSE OPTION) PAGE.html">List of products</a>
+              <a href="race-category.html">Category Info</a>
+          </div>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">Registration</button>
+          <div class="content">
+              <a href="age_requirement.html">Age Requirment</a>
+              <a href="race-category.html">Entry Fee</a>
+          </div>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">About</button>
+          <div class="content">
+                  <a href="Contact.us.html">Contact Us</a>
+                  <a href="About.Us .html">About Us</a>
+          </div>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn" id="drop">GET INTO RACE</button>
+          <div class="content">
+              <a href="Login.page.html">LOGIN</a>
+              <a href="Acc.Reg.Page.html">REGISTER</a>
+              <a href="FEEDBACK PAGE.html">Feedback</a>
+          </div>
+      </div>
+</div>
+<!--NAV BAR END-->
+    </div>
+<!--TOP END-->
+
+    <div class="container">
+        <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Contact us for more information:</p>
+    </div>
+    <div class="center">
+        <div class="column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15938.454846742712!2d101.64096112053225!3d2.926862577051845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x992b533909392555!2sTaman%20Tasik%20Cyberjaya%20Parking%20Lot!5e0!3m2!1sen!2smy!4v1578900923963!5m2!1sen!2smy" 
+          width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="column">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

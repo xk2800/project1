@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manage Product Category| MYRUN ADMIN</title>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+
+        <link rel="stylesheet" href="css/admin-nav.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .main{
+                font-size: 2em;
+                font-weight: bold;
+            }
+        .btn{
+            text-align: center;
+
+        }
+        #name{
+            margin-left: 30px;
+        }
+        #buttons{
+            margin-left: 10px;
+        }
+    </style>
+
+    <script>
+        function del(){
+            var S = document.getElementsByClassName('delete').value;
+            alert("Product Deleted");
+            window.location.href = "admin-landing.html";
+        }
+        function add(){
+            var A = document.getElementsByClassName('upload').value;
+            alert("Image has been uploaded");
+            window.location.href = "admin-landing.html";
+        }
+        function update(){
+            var U = document.getElementsByClassName('submit').value;
+            alert("Site updated");
+            window.location.href = "admin-landing.html";
+        }
+    </script>
+    </head>
+<body>
+<!--HEADER START-->
+<div class="head">
+    <p>&#9400; 2020 MYRUN Copyright
+    <div id="topaccess">Restricted Access For Admins Only</div></p>
+</div>
+<!--HEADER END-->
+<!--NAV BAR START-->
+    <div class="upnav">
+        <a href="admin-landing.html">Home</a>
+        <a href="manage-staff.html">Staff Access</a>
+        <a href="memberpage.html"> Manage Users</a>
+        <div class="dropdown">
+            <button class="dropbtn">Manage Product</button>
+                <div class="content">
+                    <a href="manage-product-cat.html">Manage Product by Category</a>
+                    <a href="manage-product-detail.html">Manage Product Details</a>
+                </div>
+        </div>
+        <a href="ManageOrderPg.html">Manage Order</a>
+        <a href="SalesReport.html">Sales Report</a>
+        <span class="logout"><a href="ADMIN LOGIN PAGE.html">LOGOUT</a></span>
+    </div>
+<!--NAV BAR END-->
+
+<!--SEARCH BAR START-->
+    <form>
+        <input type="text" name="search" placeholder="Search..">
+    </form>
+<!--SEARCH BAR END-->
+    <p class="main">Manage product category present on site</p>
+
+    
+    <table name="meja" border="1" width="800px" class="meja" style="border-collapse: collapse;">
+        <tr class="header">
+            <th>Product Category Name</th>
+            <th>Upload Image of Product</th>
+            <th>Preview Image</th>
+            <th>Delete Product</th>
+        </tr>
+        <tr>
+            <td id="name">SHOES</td>
+            <td class="btn"><input type="file" name="upload" value="Upload" accept=".jpg, .png" onclick="add()"></td>
+            <td class="btn"><input type="button" name="preview" value="Preview"></td>
+            <td class="btn"><input type="button" name="delete" value="Delete" onclick="del()" /></td>
+        </tr>
+        <tr>
+            <td class="name">MERCHANDISE</td>
+            <td class="btn"><input type="file" name="upload" value="Upload" accept=".jpg, .png" onclick="add()"></td>
+            <td class="btn"><input type="button" name="preview" value="Preview"></td>
+            <td class="btn"><input type="button" name="delete" value="Delete" onclick="del()" /></td>
+        </tr>
+    </table>
+    <br>
+    <div id="buttons">
+    <input type="button" name="add" value="Add new product">
+    <input type="submit" name="submit" value="Update to site" onclick="update()" style="margin-left: 10px;">
+    </div>
+    
+<!--FOOTER START-->
+    <div class="footer">
+        <p>&#9400; 2020 MYRUN Copyright
+            <div id="access">Restricted Access For Admins Only</div></p>
+    </div>
+<!--FOOTER END-->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thank you for payment | MYRUN</title>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+
+    <style>
+        @font-face {
+            font-family: fonts;
+            src: url("fonts/alfa_slab_one/AlfaSlabOne-Regular.ttf");
+        }
+        #close{
+            text-align: center;
+            font-family: fonts;
+            font-size: 2em;
+        }
+        .gif{
+            height: 400px;
+            width: 500px;
+        }
+        #berjaya{
+            color: #82b03c;
+        }
+/*BLINK START*/
+        #countdown {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            100%{
+                opacity: 0;
+            }   
+        }
+/*BLINK END*/
+        #open{
+            margin: 0 auto;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    
+    </style>
+    <script>
+/*COUNTDOWN SEND BACK TO HOMEPAGE*/
+        var timeleft = 8;
+        var downloadTimer = setInterval(function(){
+        document.getElementById("countdown").innerHTML = timeleft;
+        timeleft -= 1;
+        if(timeleft <= -1){
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "0"
+        }
+        }, 1000);
+/*REDIRECT*/
+        setTimeout(function(){
+            window.location.href = 'Home-page-after-login.html';
+        },9500);
+    </script>
+    </head>
+<body>
+    <div id="close">
+    <img class="gif" src="image/tick-gif.gif"/>
+    <span id="berjaya"><p>PAYMENT SUCCESSFUL</p></span>
+    <p>THANK YOU FOR YOUR PAYMENT
+    </br> You will receive a email receipt shortly</p>
+    </div>
+    <div id="open">
+    <span class="redirect">Page will redirect to home within <span id="countdown"></span> seconds</span>
+    </div>
+
+</body>
+</html>

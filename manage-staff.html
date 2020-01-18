@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Access | MYRUN ADMIN</title>
+
+        <link rel="icon" type="image/png" href= "image/MYRUN 1.png">
+        
+        <link rel="stylesheet" href="css/staff-access.css"/>
+        <link rel="stylesheet" href="css/admin-nav.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            function submit(){
+                var S = document.getElementsByClassName('buttons').value;
+                alert("Request Submited");
+                window.location.href = "admin-landing.html";
+            }
+            function add(){
+                var A = document.getElementsByClassName('buttons').value;
+                alert("New Staff Added");
+                window.location.href = "admin-landing.html";
+            }
+        </script>
+    </head>
+<body>
+<!--HEADER START-->
+<div class="head">
+    <p>&#9400; 2020 MYRUN Copyright
+    <div id="topaccess">Restricted Access For Admins Only</div></p>
+</div>
+<!--HEADER END-->
+<!--NAV BAR START-->
+<div class="upnav">
+    <a href="admin-landing.html">Home</a>
+    <a href="manage-staff.html">Staff Access</a>
+    <a href="memberpage.html"> Manage Users</a>
+    <div class="dropdown">
+        <button class="dropbtn">Manage Product</button>
+            <div class="content">
+                <a href="manage-product-cat.html">Manage Product by Category</a>
+                <a href="manage-product-detail.html">Manage Product Details</a>
+            </div>
+    </div>
+    <a href="ManageOrderPg.html">Manage Order</a>
+    <a href="SalesReport.html">Sales Report</a>
+    <span class="logout"><a href="ADMIN LOGIN PAGE.html">LOGOUT</a></span>
+</div>
+<!--NAV BAR END-->
+
+<!--SEARCH BAR START-->
+    <form>
+    <input type="text" name="search" placeholder="Search..">
+  </form>
+<!--SEARCH BAR END-->
+
+<!--CONTENT START-->
+    <p><span class="title">Control Access of Your Team</span></p>
+    <p><span id="log">Currently loged in as:</span><span id="username"> --ADMIN--</span></p>
+
+    <table border="1" class="meja">
+        <tr>
+            <th>Staff Name</th>
+            <th>Staff Username</th>
+        </tr>
+        <tr>
+            <td id="name">Jane Doe</td>
+            <td id="uname">JaneDoe123</td>
+        </tr>
+        <tr>
+            <td id="name"><span >Joe Doe</td>
+            <td id="uname"><span >JoeDoe123</td>
+        </tr>
+        <tr>
+            <td id="name">Janice Doe</td>
+            <td id="uname">JaniceDoe123</td>
+        </tr>
+        <tr>
+            <td id="name">Jack Doe</td>
+            <td id="uname">JackDoe123</td>
+        </tr>
+
+    </table>
+    
+    <table border="1" class="table" style="float: right; margin-top: -125px;">
+        <tr>
+            <th><span id="view">View Content</span></th>
+            <th><span id="update">Update Content</span></th>
+            <th><span id="delete">Delete Content</span></th>
+            <th><span id="remove">Remove Staff</span></th>
+        </tr>
+        <tr>
+            <td id="view"><input type="checkbox" name="view" value="checked"></td>
+            <td id="view"><input type="checkbox" name="update" value="checked"></td>
+            <td id="view"><input type="checkbox" name="delete" value="checked"></td>
+            <td id="view" class="gone"><img src="image/red-cross.png" /></td>
+        </tr>
+        <tr>
+            <td id="view"><input type="checkbox" name="view" value="checked"></td>
+            <td id="view"><input type="checkbox" name="update" value="checked"></td>
+            <td id="view"><input type="checkbox" name="delete" value="checked"></td>
+            <td id="view" class="gone"><img src="image/red-cross.png" /></td>
+        </tr>
+        <tr>
+            <td id="view"><input type="checkbox" name="view" value="checked"></td>
+            <td id="view"><input type="checkbox" name="update" value="checked"></td>
+            <td id="view"><input type="checkbox" name="delete" value="checked"></td>
+            <td id="view" class="gone"><img src="image/red-cross.png" /></td>
+        </tr>
+        <tr>
+            <td id="view"><input type="checkbox" name="view" value="checked"></td>
+            <td id="view"><input type="checkbox" name="update" value="checked"></td>
+            <td id="view"><input type="checkbox" name="delete" value="checked"></td>
+            <td id="view" class="gone"><img src="image/red-cross.png"/></td>
+        </tr>
+    </table>
+    <div class="buttons">
+        <input type="submit" name="submitbtn" value="Save Changes" id="submit" onclick="submit()"/>
+        <input type="button" name="addbtn" value="Add Staff" id="add" onclick="add()">
+    </div>
+<!--CONTENT END-->
+
+<!--FOOTER START-->
+<div class="footer">
+    <p>&#9400; 2020 MYRUN Copyright
+        <div id="access">Restricted Access For Admins Only</div></p>
+</div>
+<!--FOOTER END-->
+
+</body>
+</html>
