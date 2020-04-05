@@ -1,0 +1,96 @@
+/*FORM START*/    
+    
+    input{
+        border:hidden;
+    }
+
+    .whole{
+        margin-top: 30px;
+        margin-left: 150px;
+    }
+    #title{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5em;
+    }
+    #spotify{
+        float: right;
+        margin-top: -380px;
+        margin-right: 420px;
+    }
+    [name="racereg"]{
+        margin-top: 20px;
+    }
+/*DOT START*/    
+    #dot1{
+        margin-left: 133px;
+    }
+    #dot2{
+        margin-left: 159px;
+    }
+    #dot3{
+        margin-left: 101px;
+    }
+    #dot4{
+        margin-left: 100px;
+    }
+    #dot5{
+        margin-left: 123px;
+    }
+    #dot6{
+        margin-left: 28px;
+    }
+    #dot7{
+        margin-left: 14px;
+    }
+    #dot8{
+        margin-left: 20px;
+    }
+/*DOT END*/
+    #in{
+        margin-left: 50px;
+    }
+/*READ ONLY START*/
+    [name="username"]:focus,[name=name]:focus, [name=email]:focus{
+        outline: none;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+    }
+    [name="username"],[name=name], [name=email]{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-color:black;
+    }
+/*READ ONLY END*/
+
+/*TERMS START*/
+    #terms{
+        font-weight: bold;
+    }
+/*TERMS END*/
+
+/*BUTTON START*/
+    input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover{
+        opacity: 0.6 ;
+        cursor: pointer;
+        
+    }
+    input[type=submit], input[type=reset], input[type=button]{
+        cursor: pointer;
+        background-color: #f5d97d;
+        border: 1px solid grey;
+        width: 100px;
+        height: 50px;
+        padding: 10px 20px 10px 20px 10px;
+        margin-top: 20px;
+    }
+    input[type=submit]{
+        margin-left: 150px;
+    }
+    input[type=reset]{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+/*BUTTON END*/

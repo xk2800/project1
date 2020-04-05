@@ -1,0 +1,82 @@
+/*CONTENT START*/
+    .title{
+        font-weight: bold;
+        font-size: 2em;
+        margin-left: 5px;
+    }
+    #log{
+        font-size: 1.3em;
+        margin-left: 15px;
+    }
+    #username{
+        font-weight: bold;
+        color: red;
+        font-size: 2.3em;
+    }
+    .table, .meja{
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+    /*RIGHT BOX START*/
+        .table{
+            margin-right: 80px;
+        }
+        #view{
+            text-align: center;
+            width: 150px;
+        }
+        .gone img{
+            height: 11px;
+            width: 11px;
+        }
+    /*RIGHT BOX START*/
+    /*LEFT BOX START*/
+        .meja{
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        #name, #uname{
+            text-align: justify;
+            width: 250px;
+            text-align: justify;
+        }
+    /*LEFT BOX END*/
+    .buttons{
+        float: right;
+        margin-top: 30px;
+        margin-right: 100px;
+    }
+    #submit{
+        margin-right: 50px;
+    }
+    #submit, #add{
+        width: 100px;
+        height: 25px;
+        border: 1px solid blue;
+    }
+
+/*CONTENT END*/
+
+/*FOOTER START*/
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a9a9a9;
+    text-align: justify;
+    text-indent: 20px;
+}
+#access{
+    text-indent: 1280px;
+    margin-top: -35px;
+    font-weight: bold;
+    color: red;
+}
+#topaccess{
+    text-indent: 1250px;
+    margin-top: -35px;
+    font-weight: bold;
+    color: red;
+}
+/*FOOTER END*/

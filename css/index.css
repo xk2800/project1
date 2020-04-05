@@ -1,0 +1,181 @@
+/*TOP START*/
+    body{
+        padding-bottom: 60%;
+    }
+    #city{
+        width: 100%;
+        height: 350px;
+    }
+/*TOP END*/
+
+/*NAV BAR IN "navbar .css file"*/
+
+/*WELCOME USER START*/
+    .welcome{
+        margin-top: 30px;
+        margin-left: 250px;
+        font-size: 1.8em;
+        font-family: cursive;
+    }
+/*WELCOME USER END*/
+
+/*SPONSOR START*/
+    .sponsor{
+        border-radius: 12px;
+        margin-top: 30px;
+        margin-left: 100px;
+        border: 1px solid #c4c1b9;
+        border-collapse: collapse;
+        float: left;
+        text-align: center;
+    }
+    #title{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:#f5d97d;
+        border-radius: 7px 7px 0px 0px;
+        color: black;
+        font-weight: bold;
+        margin: -1px -1px 0px -1px;
+    }
+    #venue{
+        background-color: #c4c1b9;
+        text-align: center;
+        padding: 0px 5px 10px 5px;
+        font-size: 16px;
+        margin-right: -1px;
+        padding-top: 10px;
+
+    }
+    #sepang img{
+        height: 200px;
+        width: 160px;
+    }
+    #casio img{
+        height: 80px;
+        width: 200px;
+        
+    }
+    #gato img{
+        height: 100px;
+        width: 120px;
+    }
+    #adidas img{
+        height: 80px;
+        width: 150px;
+    }
+    #sepang img, #casio img, #gato img, #adidas img{
+        padding: 10px 0px 10px 0px;
+    }
+
+/*SPONSOR END*/
+
+/*CONTENT START*/
+    .info{
+        border: 1px solid black;
+        height: 300px;
+        width: 500px;
+        /*float: center;
+        text-align: center;*/
+        margin-left: 400px;
+        margin-top: 100px;
+        padding-left: 10px;
+        font-size: 30px;
+    }
+    #details{
+        text-align: center;
+        font-weight: bold;
+    }
+    .video{
+        margin-left: 370px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+/*CONTENT END*/
+
+/*RIGHT PANEL START*/
+    .register{
+        float: right;
+        margin-top: 30px;
+        margin-right: 115px;
+    }
+    #button img{
+        height: 150px;
+        width: 300px;
+    }
+    #spotify{
+        float: right;
+        margin-top: 200px;
+        margin-right: -300px;
+    }
+/*RIGHT PANEL END*/
+
+/*TIMER START*/
+    .countdown{
+        border: 2px solid #f5d97d;
+        text-align: center; 
+        background-color: #f5d97d;
+        font-family: sans-serif; 
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        margin-left: 550px;
+        float: center;
+        border-radius: 20px 20px 20px 20px;
+        font-family: stencil;
+    }
+    .clock{
+        margin-top: -20px;
+        background-color: black;
+        color: yellow;
+        height: 160px;
+        margin-top: 10px;
+        border-radius: 0px 0px 20px 20px;
+        margin: 15px 1px 2px 2px;
+    }
+    #logo{            
+        border: none;
+        height: -50px;
+    }
+/*TIMER END*/
+
+/*FOOTER START*/
+    .foot{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: gray;
+        }
+    #copyright{
+        text-align: left;
+        text-indent: 100px;
+        color: white;
+    }
+    #social{
+            text-indent: 1200px;
+            margin-top: -35px;
+            color: white;
+    }
+    #ig img{
+        height: 30px;
+        width: 58px;
+        border-radius: 80px 80px 80px 80px;
+        
+    }
+    #fb img{
+        height: 30px;
+        width: 35px;
+    }
+    #twitter img{
+        height: 30px;
+        width: 50px;
+        border-radius: 80px 80px 80px 80px;
+    }
+    #youtube img{
+        height: 30px;
+        width: 50px;
+        border-radius: 80px 80px 80px 80px;
+    }
+/*FOOTER END*/

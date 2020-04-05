@@ -1,0 +1,99 @@
+/*NAV BAR START*/
+    .upnav{
+        overflow: hidden;
+        background-color: gray;
+    }
+    .upnav a{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 2em;
+    }
+    .upnav a:hover{
+        background-color: green;
+        font-weight: bold;
+        color: white;
+    }
+    .upnav a:active{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+/*LOGOUT START*/
+    .logout a{
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 2em;
+        margin-right: 10px;
+        background-color: tomato;
+    }
+/*LOGOUT END*/
+/*NAV BAR END*/
+
+/*CONTENT START*/
+    .open, .name{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .name{
+        text-decoration: underline;
+    }
+    table{
+        border: 1px solid black;
+        text-align: center;
+        margin: auto;
+    }
+    #tab{
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-bottom: 40px;
+        width: 80%;
+        height: fit-content;
+    }
+    #inside{
+        font-weight: bold;
+    }
+    #sys, .reg{
+        border: 1px solid white;
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    #sys, .reg{
+        border: 1px solid white;
+    }
+    .tabb{
+        border-collapse: separate;
+        border-spacing: 15px;
+        width: 80%;
+        height: fit-content;
+    }
+/*CONTENT END*/
+
+/*FOOTER START*/
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #a9a9a9;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    #access{
+        text-indent: 1280px;
+        margin-top: -35px;
+        font-weight: bold;
+        color: red;
+    }
+    #topaccess{
+        text-indent: 1250px;
+        margin-top: -35px;
+        font-weight: bold;
+        color: red;
+    }
+/*FOOTER END*/

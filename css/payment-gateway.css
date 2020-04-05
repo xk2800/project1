@@ -1,0 +1,45 @@
+body{
+    background-color:#ccc8bc;
+    text-align: center;
+
+}
+#main {
+    border-radius: 10px;
+    border: 5px solid white;
+    width: 600px;
+    height: 520px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #f5d97d;
+}
+#accept{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*BORDER INPUT BOX*/
+#cvv, #name [type="text"], .label [name="expireMM"], [name="expireYYYY"],#payment-form [type="text"] {
+    border-radius : 5px 5px 5px 5px;
+    border: 1px solid #DDD;
+    height: 25px;
+}
+
+#cvv:focus, #name [type="text"]:focus, 
+.label [name="expireMM"]:focus, [name="expireYYYY"]:focus,
+#payment-form [type="text"]:focus 
+{
+    outline: none;
+}
+
+img{
+    border: 1px solid #ccc8bc;
+    margin: 10px 5px 5px 10px;
+}

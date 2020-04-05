@@ -1,0 +1,136 @@
+/* FOR ADMIN LOGIN PAGE */
+body{
+    text-align:center;
+}
+
+#REGForm{
+    border: 1px solid black;
+    width:250px;
+    text-align:center;
+    margin:auto;
+    margin-top:100px;
+}
+
+legend{
+    font-size: 1.2em;
+}
+
+img#adminpic{
+    width:40px;
+    height:40px;
+}
+
+.adminPaU{
+    font-size:1.5em;
+}
+
+/*FOR SHOP(CHOOSE OPTION) PAGE */
+
+/* FOR LIST OF PRODUCT */
+
+#container{
+    widows: 100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+}
+
+.card,#card{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin:10px 50px auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+ /* 
+.card2{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    text-align: center;
+    font-family: arial;
+  }
+*/
+
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+
+.card h1,#card h1{
+    font-size:18px;
+}
+  
+.card button:hover{
+    opacity: 0.7;
+  }
+
+#card .shirt{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    
+}
+/* FOR FEEDBACK PAGE*/
+
+#FORM{
+    font-weight:bold;
+    border-radius:10px;
+    width:25%;
+    margin:auto;
+   
+}
+
+.rate {
+    margin-top:-39 ;
+    margin-right:120px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:0.5em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:35px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '*';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
